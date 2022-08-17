@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply text-hitam dark:text-white dark:bg-hitam;
+    font-family: 'Roboto Slab';
+}
+
+p {
+    @apply text-pudar dark:text-slate-300;
+}
+#yakin {
+    @apply text-hitam dark:text-white;
+}
+
+#portfolio {
+    @apply dark:bg-slate-700;
+}
+#kualifi {
+    @apply bg-hitam dark:bg-slate-700 text-white;
+}
+#blog {
+    @apply bg-slate-300 dark:bg-slate-700;
+}
+#card {
+    @apply bg-white dark:bg-slate-700;
+}
+
+
+
+.navbar-fixed {
+    @apply fixed z-[9999] bg-white bg-opacity-70 backdrop-blur-sm dark:bg-hitam dark:bg-opacity-50;
+    box-shadow: inset 0  -1px 0 0 rgba(0,0,0,0.2)
+}
+.tombol-line {
+    @apply w-[30px] h-[2px] my-2 block bg-hitam dark:bg-white;
+}
+.tombol-aktiv > span:nth-child(1) {
+    @apply rotate-45;
+}
+.tombol-aktiv > span:nth-child(2) {
+    @apply scale-0;
+}
+.tombol-aktiv > span:nth-child(3) {
+    @apply -rotate-45;
+}
+
+#mode:checked ~ label div.mode-circle {
+    @apply translate-x-3
+}
